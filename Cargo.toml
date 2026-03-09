@@ -1,0 +1,11 @@
+[package]
+name = "thread-delay"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+keywords = ["linux", "std", "embedded"]
+categories = ["embedded"]
+readme = "README.md"
+
+[dependencies]
+embedded-hal = "1.0.0"
