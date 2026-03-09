@@ -28,7 +28,7 @@
 //!  
 //! enum LoopState {
 //!     Waiting,
-//!     Measureing,
+//!     Measuring,
 //! }
 //!
 //! fn main() -> ! {
@@ -53,11 +53,11 @@
 //!         match state {
 //!             LoopState::Waiting => {
 //!                 if elapsed.as_millis() >= delay_millis {
-//!                     state = LoopState::Measureing
+//!                     state = LoopState::Measuring
 //!                 }
 //!             }
 //!
-//!             LoopState::Measureing => {
+//!             LoopState::Measuring => {
 //!                 let measurements = bme280
 //!                     .measure(&mut delay)
 //!                     .expect("failed to read measurements from bme280");
